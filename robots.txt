@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Rechtsseiten dürfen indexiert werden
+Allow: /impressum.html
+Allow: /datenschutz.html
+Allow: /agb.html
+Allow: /widerrufsrecht.html
+Allow: /cookie-richtlinie.html
+
+# Sitemap
+Sitemap: https://figl-sol.at/sitemap.xml

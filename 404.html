@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seite nicht gefunden (404) – FIGL Montagetechnik</title>
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="https://figl-sol.at/">
+    <link rel="icon" type="image/png" href="figl-logo.png">
+    <link rel="stylesheet" href="assets/fonts.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <style>
+        :root {
+            --orange: #FC9401;
+            --orange-dark: #D97E01;
+            --dark: #0D0D0D;
+            --dark-secondary: #111111;
+            --text: #FFFFFF;
+            --text-secondary: #AAAAAA;
+            --text-muted: #888888;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Space Grotesk', 'Inter', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: var(--dark);
+            color: var(--text-secondary);
+            font-family: var(--font-body);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 24px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 50% 60%, rgba(252, 148, 1, 0.07) 0%, transparent 60%),
+                linear-gradient(180deg, var(--dark) 0%, var(--dark-secondary) 100%);
+            z-index: 0;
+        }
+
+        .error {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+        }
+
+        .error__code {
+            font-family: var(--font-display);
+            font-size: clamp(5rem, 18vw, 9rem);
+            font-weight: 700;
+            line-height: 1;
+            background: linear-gradient(120deg, var(--orange) 0%, var(--orange-dark) 60%, #ffc98a 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            margin-bottom: 20px;
+        }
+
+        .error__title {
+            font-family: var(--font-display);
+            font-size: clamp(1.4rem, 4vw, 2rem);
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 14px;
+        }
+
+        .error__text {
+            font-size: 1rem;
+            line-height: 1.7;
+            max-width: 480px;
+            margin: 0 auto 36px;
+        }
+
+        .error__btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 38px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
+            color: #fff;
+            text-decoration: none;
+            box-shadow: 0 6px 22px rgba(252, 148, 1, 0.22);
+            transition: all 0.3s ease;
+        }
+
+        .error__btn:hover {
+            background: linear-gradient(135deg, var(--orange-dark) 0%, var(--orange) 100%);
+            transform: translateY(-3px);
+        }
+
+        .error__btn i { transition: transform 0.25s ease; }
+        .error__btn:hover i { transform: translateX(4px); }
+
+        .error__logo {
+            width: 72px;
+            height: auto;
+            margin: 0 auto 32px;
+            filter: drop-shadow(0 8px 30px rgba(252, 148, 1, 0.15));
+        }
+
+        @media (max-width: 480px) {
+            .error { width: 100%; }
+            .error__btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="error">
+        <img src="figl-logo.png" alt="FIGL Montagetechnik Logo" class="error__logo">
+        <div class="error__code">404</div>
+        <h1 class="error__title">Diese Seite wurde nicht gefunden.</h1>
+        <p class="error__text">
+            Die von Ihnen aufgerufene Seite existiert nicht oder wurde verschoben.
+            Kein Problem – wir bringen Sie zurück zu unseren Leistungen.
+        </p>
+        <a href="FIGL_Montagetechnik.html" class="error__btn">
+            <i class="fas fa-arrow-left"></i> Zur Startseite
+        </a>
+    </main>
+
+</body>
+</html>
