@@ -924,10 +924,15 @@
             text-transform: uppercase;
         }
 
-        .marquee__item i {
-            font-size: 0.7em;
-            color: var(--orange);
+        .marquee__item svg {
+            width: 0.7em;
+            height: 0.7em;
+            flex-shrink: 0;
             align-self: center;
+        }
+
+        .marquee__item svg polygon {
+            fill: var(--orange);
         }
 
         @keyframes marquee {
@@ -2458,18 +2463,18 @@
     <div class="marquee" aria-hidden="true">
         <div class="marquee__track">
             <div class="marquee__group">
-                <span class="marquee__item">Zäune <i class="fas fa-star-of-life"></i></span>
-                <span class="marquee__item">Terrassen <i class="fas fa-star-of-life"></i></span>
-                <span class="marquee__item">Böden <i class="fas fa-star-of-life"></i></span>
-                <span class="marquee__item">Sonnenschutz <i class="fas fa-star-of-life"></i></span>
-                <span class="marquee__item">Montageleistungen <i class="fas fa-star-of-life"></i></span>
+                <span class="marquee__item">Zäune <svg class="marquee__sep" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,1 9.53,15.4 1.54,15.4 8.01,10.7 5.53,3.1 12,7.8 18.47,3.1 15.99,10.7 22.46,15.4 14.47,15.4"></polygon></svg></span>
+                <span class="marquee__item">Terrassen <svg class="marquee__sep" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,1 9.53,15.4 1.54,15.4 8.01,10.7 5.53,3.1 12,7.8 18.47,3.1 15.99,10.7 22.46,15.4 14.47,15.4"></polygon></svg></span>
+                <span class="marquee__item">Böden <svg class="marquee__sep" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,1 9.53,15.4 1.54,15.4 8.01,10.7 5.53,3.1 12,7.8 18.47,3.1 15.99,10.7 22.46,15.4 14.47,15.4"></polygon></svg></span>
+                <span class="marquee__item">Sonnenschutz <svg class="marquee__sep" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,1 9.53,15.4 1.54,15.4 8.01,10.7 5.53,3.1 12,7.8 18.47,3.1 15.99,10.7 22.46,15.4 14.47,15.4"></polygon></svg></span>
+                <span class="marquee__item">Montageleistungen <svg class="marquee__sep" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,1 9.53,15.4 1.54,15.4 8.01,10.7 5.53,3.1 12,7.8 18.47,3.1 15.99,10.7 22.46,15.4 14.47,15.4"></polygon></svg></span>
             </div>
             <div class="marquee__group">
-                <span class="marquee__item">Zäune <i class="fas fa-star-of-life"></i></span>
-                <span class="marquee__item">Terrassen <i class="fas fa-star-of-life"></i></span>
-                <span class="marquee__item">Böden <i class="fas fa-star-of-life"></i></span>
-                <span class="marquee__item">Sonnenschutz <i class="fas fa-star-of-life"></i></span>
-                <span class="marquee__item">Montageleistungen <i class="fas fa-star-of-life"></i></span>
+                <span class="marquee__item">Zäune <svg class="marquee__sep" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,1 9.53,15.4 1.54,15.4 8.01,10.7 5.53,3.1 12,7.8 18.47,3.1 15.99,10.7 22.46,15.4 14.47,15.4"></polygon></svg></span>
+                <span class="marquee__item">Terrassen <svg class="marquee__sep" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,1 9.53,15.4 1.54,15.4 8.01,10.7 5.53,3.1 12,7.8 18.47,3.1 15.99,10.7 22.46,15.4 14.47,15.4"></polygon></svg></span>
+                <span class="marquee__item">Böden <svg class="marquee__sep" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,1 9.53,15.4 1.54,15.4 8.01,10.7 5.53,3.1 12,7.8 18.47,3.1 15.99,10.7 22.46,15.4 14.47,15.4"></polygon></svg></span>
+                <span class="marquee__item">Sonnenschutz <svg class="marquee__sep" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,1 9.53,15.4 1.54,15.4 8.01,10.7 5.53,3.1 12,7.8 18.47,3.1 15.99,10.7 22.46,15.4 14.47,15.4"></polygon></svg></span>
+                <span class="marquee__item">Montageleistungen <svg class="marquee__sep" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,1 9.53,15.4 1.54,15.4 8.01,10.7 5.53,3.1 12,7.8 18.47,3.1 15.99,10.7 22.46,15.4 14.47,15.4"></polygon></svg></span>
             </div>
         </div>
     </div>
